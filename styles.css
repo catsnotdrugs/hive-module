@@ -91,7 +91,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    background: pink;
     width: 50%;
     overflow: hidden;
 
@@ -153,7 +152,6 @@ body {
 }
 
 .hex-image-wrapper {
-    background: green;
 }
 
 .hex-image {

@@ -46,7 +46,7 @@ body {
     width: 40%;
 }
 
-.active {
+.active-button {
     background: var(--black);
     color: #fafafa !important;
 }
@@ -76,14 +76,16 @@ body {
     height: 64px;
     position: absolute;
     right: 16px;
+    display: none;
+}
+
+.arrow-active {
+    display: block;
 }
 
 
+
 .right-wrapper {
-    /*background-image: url("/assets/hive-hexagon.png");*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -102,9 +104,8 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    gap: 32px;
-    transition: all .75s ease;
-    left: 999999px;
+    gap: 24px;
+    left: 1999px;
 
 }
 
@@ -115,8 +116,9 @@ body {
 .service-title {
     color: var(--black);
     font-family: 'Encode Sans Expanded', sans-serif;
-    font-size: 44px;
+    font-size: clamp(1.25rem, 1.3vw + 1rem, 2.25rem);
     font-weight: 600;
+    text-align: center;
 }
 .service-info {
     color: var(--black);
@@ -130,12 +132,16 @@ body {
 
 .service-button {
     display: flex;
-    padding: 16px 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 340px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 50px;
     background: var(--yellow);
+    border: none;
+    z-index: 500;
 }
 
 .button-text {
@@ -147,12 +153,6 @@ body {
 }
 
 .hex-image-wrapper {
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*background: linear-gradient(90deg, #FFC400 51%, #FFFFFF 51%);*/
     background: green;
 }
 

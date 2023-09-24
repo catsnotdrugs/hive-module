@@ -4,72 +4,76 @@
     <meta charset="UTF-8">
     <title>Hive Strategy</title>
     <link rel="stylesheet" href="styles.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@600;700&family=Nunito+Sans&display=swap"
           rel="stylesheet">
+    <script src="functions.js"></script>
 </head>
 <body>
 
 <section class="content-wrapper">
     <div class="left-wrapper">
-        <div class="left-text active">
+        <div class="left-text active-button" id="service-1" onclick="setActiveStates('hex-1', 'service-1', 'arrow-1')">
             <span>Lead <br> Generation</span>
-            <img class="right-arrow" src="assets/right-arrow.svg">
+            <img class="right-arrow arrow-active" id="arrow-1" src="assets/right-arrow.svg">
         </div>
-        <div class="left-text">
-            HubSpot <br> Implementation
+        <div class="left-text" id="service-2" onclick="setActiveStates('hex-2', 'service-2', 'arrow-2')">
+            <span>HubSpot <br> Implementation</span>
+            <img class="right-arrow" id="arrow-2" src="assets/right-arrow.svg">
         </div>
-        <div class="left-text">
-            Website <br> Development
+        <div class="left-text" id="service-3" onclick="setActiveStates('hex-3', 'service-3', 'arrow-3')">
+            <span>Website<br> Development</span>
+            <img class="right-arrow" id="arrow-3" src="assets/right-arrow.svg">
         </div>
-        <div class="left-text">
-            Account Based <br> Marketing
+        <div class="left-text" id="service-4" onclick="setActiveStates('hex-4', 'service-4', 'arrow-4')">
+            <span>Account Based <br> Marketing </span>
+            <img class="right-arrow" id="arrow-4" src="assets/right-arrow.svg">
         </div>
     </div>
     <div class="right-wrapper">
-        <div class="hex-wrapper">
+        <div class="hex-wrapper hex-wrapper-active" id="hex-1">
             <h2 class="service-title">Lead Generation</h2>
             <p class="service-info">
                 Generate leads for your business through strategic inbound marketing, account based marketing, and
                 digital advertising campaigns.
             </p>
-            <div class="service-button"><img class="button-arrow" src="assets/right-arrow.svg">
+            <button class="service-button"><img class="button-arrow"
+                                                                             src="assets/right-arrow.svg">
                 <a href="/#" class="button-text">INBOUND MARKETING</a>
+
+            </button>
+        </div>
+        <div class="hex-wrapper" id="hex-2">
+            <h2 class="service-title">HubSpot <br> Implementation</h2>
+            <p class="service-info">
+                HubSpot Implementation, onboarding, and customization to help you get the most out of your HubSpot
+                investment.
+            </p>
+            <button class="service-button"><img class="button-arrow"
+                                                                             src="assets/right-arrow.svg">
+                <a href="/#" class="button-text">MORE ON HUBSPOT</a>
+
+            </button>
+        </div>
+        <div class="hex-wrapper" id="hex-3">
+            <h2 class="service-title">Website Development</h2>
+            <p class="service-info">
+                Custom website design development including thorough UX research and design and custom development in
+                HubSpot CMS and WordPress.
+            </p>
+            <div class="service-button"><img class="button-arrow" src="assets/right-arrow.svg">
+                <a href="/#" class="button-text">WEB DEVELOPMENT</a>
 
             </div>
         </div>
-        <div class="hex-wrapper hex-wrapper-active">
-            <h2 class="service-title">Lead Generation</h2>
+        <div class="hex-wrapper" id="hex-4">
+            <h2 class="service-title">Account Based <br> Marketing</h2>
             <p class="service-info">
-                Generate leads for your business through strategic inbound marketing, account based marketing, and
-                digital advertising campaigns.
+                Get in front of the right people at the right companies through an omni-channel ABM campaign.
             </p>
             <div class="service-button"><img class="button-arrow" src="assets/right-arrow.svg">
-                <a href="/#" class="button-text">INBOUND MARKETING</a>
-
-            </div>
-        </div>
-        <div class="hex-wrapper">
-            <h2 class="service-title">Lead Generation</h2>
-            <p class="service-info">
-                Generate leads for your business through strategic inbound marketing, account based marketing, and
-                digital advertising campaigns.
-            </p>
-            <div class="service-button"><img class="button-arrow" src="assets/right-arrow.svg">
-                <a href="/#" class="button-text">INBOUND MARKETING</a>
-
-            </div>
-        </div>
-        <div class="hex-wrapper ">
-            <h2 class="service-title">Lead Generation</h2>
-            <p class="service-info">
-                Generate leads for your business through strategic inbound marketing, account based marketing, and
-                digital advertising campaigns.
-            </p>
-            <div class="service-button"><img class="button-arrow" src="assets/right-arrow.svg">
-                <a href="/#" class="button-text">INBOUND MARKETING</a>
+                <a href="/#" class="button-text">AB MARKETING</a>
 
             </div>
         </div>
